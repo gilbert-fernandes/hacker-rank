@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/001-simple-array-sum/001-simple-array-sum.iml" filepath="$PROJECT_DIR$/001-simple-array-sum/001-simple-array-sum.iml" />
+      <module fileurl="file://$PROJECT_DIR$/002-compare-the-triplets/002-compare-the-triplets.iml" filepath="$PROJECT_DIR$/002-compare-the-triplets/002-compare-the-triplets.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hacker-rank.iml" filepath="$PROJECT_DIR$/hacker-rank.iml" />
+    </modules>
+  </component>
+</project>
