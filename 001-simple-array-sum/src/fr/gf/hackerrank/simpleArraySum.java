@@ -1,6 +1,6 @@
 package fr.gf.hackerrank;
 
-public class main {
+public class simpleArraySum {
 
   static int simpleArraySum(int[] ar) {
     int sum = 0;

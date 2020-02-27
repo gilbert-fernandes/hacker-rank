@@ -3,7 +3,7 @@ package fr.gf.hackerrank;
 import java.util.ArrayList;
 import java.util.List;
 
-public class main {
+public class compareTheTriplets {
 
   static List<Integer> compareTriplets(List<Integer> a, List<Integer> b) {
     int alicePoints = 0;
