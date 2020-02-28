@@ -24,25 +24,29 @@ public class birthdayCakeCandles {
 
     int tallest = Integer.MIN_VALUE;
 
-    HashMap<Integer, Integer> seenValues = new HashMap<>(ar.length);
+    //HashMap<Integer, Integer> seenValues = new HashMap<>(ar.length);
+    int count = 0;
 
     for(int v : ar) {
-
-      // record tallest candle
       if(v > tallest) {
         tallest = v;
+        count = 1;
+      } else if (v == tallest) {
+        count++;
       }
 
       // keep a record of seen values, start @1 or increment
-      final int count = seenValues.getOrDefault(v, 0);
-      seenValues.put(v, count + 1);
+      //final int count = seenValues.getOrDefault(v, 0);
+      //seenValues.put(v, count + 1);
     }
 
     // DEV
-//    System.out.println("tallest seen = " + tallest);
+    System.out.println("tallest seen = " + tallest);
+    System.out.println("count        = " + count);
 //    System.out.println("count        = " + seenValues.get(tallest));
 
-    return seenValues.get(tallest);
+    return count;
+    //return seenValues.get(tallest);
   }
 
   public static void main(String[] args) {

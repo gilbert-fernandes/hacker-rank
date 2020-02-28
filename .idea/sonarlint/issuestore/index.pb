@@ -13,3 +13,17 @@ b
 2005-plus-minus/src/fr/gf/hackerrank/plusMinus.java,e/b/ebf77f610f2e10f6bee1ec2ca81b87d35b5b3f28
 S
 #.idea/sonarlint/issuestore/index.pb,9/f/9fe84ebb15faf917b7def6236dba604453cc61e0
+O
+006-staircase/006-staircase.iml,2/b/2b4dfaf1e32939515501f4888c3f0e34203e2622
+a
+1006-staircase/src/fr/gf/hackerrank/staircase.java,1/3/1382f488df4dd7fc631c04f8e2982a4b92edea00
+U
+%007-mini-max-sum/007-mini-max-sum.iml,5/3/531d7fc3845deb7f77a4b02d13da9b863c5fe6d5
+g
+7008-birthday-cake-candles/008-birthday-cake-candles.iml,5/4/54819644410ce845c72616f9b7617174dda63957
+e
+5007-mini-max-sum/src/fr/gf/hackerrank/miniMaxSum.java,b/5/b5311c180b4b08f923718e7a4d121ca6988d0ce2
+w
+G008-birthday-cake-candles/src/fr/gf/hackerrank/birthdayCakeCandles.java,c/e/ce628a874ad5b11dc100366e3209fb869d6f5f30
+l
+<009-time-conversion/src/fr/gf/hackerrank/timeConversion.java,2/f/2f4828ac3c316ff4639ada82ffea254fdddcba10

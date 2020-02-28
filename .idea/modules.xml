@@ -10,6 +10,7 @@
       <module fileurl="file://$PROJECT_DIR$/006-staircase/006-staircase.iml" filepath="$PROJECT_DIR$/006-staircase/006-staircase.iml" />
       <module fileurl="file://$PROJECT_DIR$/007-mini-max-sum/007-mini-max-sum.iml" filepath="$PROJECT_DIR$/007-mini-max-sum/007-mini-max-sum.iml" />
       <module fileurl="file://$PROJECT_DIR$/008-birthday-cake-candles/008-birthday-cake-candles.iml" filepath="$PROJECT_DIR$/008-birthday-cake-candles/008-birthday-cake-candles.iml" />
+      <module fileurl="file://$PROJECT_DIR$/009-time-conversion/009-time-conversion.iml" filepath="$PROJECT_DIR$/009-time-conversion/009-time-conversion.iml" />
       <module fileurl="file://$PROJECT_DIR$/hacker-rank.iml" filepath="$PROJECT_DIR$/hacker-rank.iml" />
     </modules>
   </component>
