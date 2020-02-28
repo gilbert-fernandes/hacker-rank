@@ -36,9 +36,7 @@ public class miniMaxSum {
       // the 0 moves here from [0] to [n-1]
       int[] arrayCopy = arr.clone();
       arrayCopy[i] = 0;
-//      System.out.println("summing " + Arrays.toString(arrayCopy));
       final long newSum = Arrays.stream(arrayCopy).asLongStream().sum();
-//      System.out.println("= " + newSum);
       // record min and max
       if(newSum < minimum) {
         minimum = newSum;
@@ -53,7 +51,6 @@ public class miniMaxSum {
 
   public static void main(String[] args) {
     // expected 2063136757 2744467344
-//    System.out.println("2063136757 2744467344");
     int[] arr = new int[] { 256741038, 623958417, 467905213, 714532089, 938071625 };
     miniMaxSum(arr);
   }
