@@ -11,3 +11,5 @@ t
 D004-diagonal-difference/src/fr/gf/hackerrank/diagonalDifference.java,7/b/7bfe40a13fd611e0ac628696e3120bd31e8897ab
 b
 2005-plus-minus/src/fr/gf/hackerrank/plusMinus.java,e/b/ebf77f610f2e10f6bee1ec2ca81b87d35b5b3f28
+S
+#.idea/sonarlint/issuestore/index.pb,9/f/9fe84ebb15faf917b7def6236dba604453cc61e0

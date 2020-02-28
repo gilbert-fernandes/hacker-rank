@@ -7,6 +7,7 @@
       <module fileurl="file://$PROJECT_DIR$/003-a-very-bug-sum/003-a-very-bug-sum.iml" filepath="$PROJECT_DIR$/003-a-very-bug-sum/003-a-very-bug-sum.iml" />
       <module fileurl="file://$PROJECT_DIR$/004-diagonal-difference/004-diagonal-difference.iml" filepath="$PROJECT_DIR$/004-diagonal-difference/004-diagonal-difference.iml" />
       <module fileurl="file://$PROJECT_DIR$/005-plus-minus/005-plus-minus.iml" filepath="$PROJECT_DIR$/005-plus-minus/005-plus-minus.iml" />
+      <module fileurl="file://$PROJECT_DIR$/006-staircase/006-staircase.iml" filepath="$PROJECT_DIR$/006-staircase/006-staircase.iml" />
       <module fileurl="file://$PROJECT_DIR$/hacker-rank.iml" filepath="$PROJECT_DIR$/hacker-rank.iml" />
     </modules>
   </component>
