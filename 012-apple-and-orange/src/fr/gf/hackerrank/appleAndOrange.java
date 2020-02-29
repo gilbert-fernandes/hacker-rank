@@ -1,5 +1,7 @@
 package fr.gf.hackerrank;
 
+import java.util.Arrays;
+
 /**
  * Sam's house has an apple tree and an orange tree that yield an abundance of fruit.
  * In the diagram below, the red region denotes his house, where s is the start point,
@@ -30,27 +32,44 @@ public class appleAndOrange {
     // apple tree : left of house
     // orange tree : right of house
 
+    // version 1 - basic
     // apples
-    long appleCount = 0;
-    for(int apple : apples) {
-      int applePosition = a + apple;
-      //System.out.println("apple position = " + a + " + " + apple + " = " + applePosition);
-      if(applePosition >= s && applePosition <= t) {
-        appleCount++;
-      }
-    }
-    System.out.println(appleCount);
+//    long appleCount = 0;
+//    for(int apple : apples) {
+//      int applePosition = a + apple;
+//      //System.out.println("apple position = " + a + " + " + apple + " = " + applePosition);
+//      if(applePosition >= s && applePosition <= t) {
+//        appleCount++;
+//      }
+//    }
+//    System.out.println(appleCount);
 
-    // oranges
-    long orangeCount = 0;
-    for(int orange : oranges) {
-      int orangePosition = b + orange;
-      //System.out.println("orange position = " + b + " + " + orange + " = " + orangePosition);
-      if(orangePosition >= s && orangePosition <= t) {
-        orangeCount++;
-      }
-    }
-    System.out.println(orangeCount);
+    // version 2 - lambda
+    // stream over apples, filter when +a >= s && +a <= t
+    System.out.println(
+    Arrays.stream(apples)
+          .filter(x -> (x+a) >= s && (x+a) <= t)
+          .count()
+    );
+
+    // version 1 - basic
+//    // oranges
+//    long orangeCount = 0;
+//    for(int orange : oranges) {
+//      int orangePosition = b + orange;
+//      //System.out.println("orange position = " + b + " + " + orange + " = " + orangePosition);
+//      if(orangePosition >= s && orangePosition <= t) {
+//        orangeCount++;
+//      }
+//    }
+//    System.out.println(orangeCount);
+
+    // version 2
+    System.out.println(
+    Arrays.stream(oranges)
+          .filter(x -> (x+b) >= s && (x+b) <= t)
+          .count()
+    );
   }
 
   public static void main(String[] args) {
