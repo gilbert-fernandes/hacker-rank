@@ -1,5 +1,7 @@
 package fr.gr.hackerrank;
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -26,42 +28,47 @@ public class gradingStudents {
 
     /**
      * Complete the function gradingStudents in the editor below.
-     * It should return an integer array consisting of rounded grades.
-     * gradingStudents has the following parameter(s):
-     * grades: an array of integers representing grades before rounding
-     *
-     * The first line contains a single integer, n, the number of students
-     * Each line i of the n subsequent lines contains a single integer, grades[i]
-     * denoting student i grade.
      *
      * Constraints
      * 1 <= n <= 60
      * 0 <= grades[i] <= 100
      *
-     * For each grades[i] print the rounded grade on a nez line
-     *
      * Sample Input 0
-     * 4
-     * 73
-     * 67
-     * 38
-     * 33
+     * 73, 67, 38, 33
      *
      * Sample Output 0
-     * 75
-     * 67
-     * 40
-     * 33
+     * 75, 67, 40, 33
      *
-     * @param grades
-     * @return
+     * @param grades list of grades
+     * @return rounded list of grades
      */
-    public static List<Integer> gradingStudents(List<Integer> grades) {
-
+    public static List<Integer> gradingStudents(final List<Integer> grades) {
+        List<Integer> rounded = new ArrayList<>(grades.size());
+        for(Integer i : grades) {
+            // If the value of grade is less than 38 no rounding occurs
+            // If the difference between the grade and the next multiple of 5 is less than 3
+            // round grade up to the next multiple of 5
+/*            if(i < 38 || i % 5 < 3) {
+                //System.out.println(i + " -> not rounding");
+                rounded.add(i);
+            } else {
+                Integer r = (i + 5) - (i % 5);
+                //System.out.println(i + " -> " + r);
+                rounded.add(r);
+            }*/
+            rounded.add(i < 38 || i % 5 < 3 ? i
+                                            : (i + 5) - (i % 5));
+        }
+        return rounded;
     }
 
     public static void main(String[] args) {
+        List<Integer> test = Arrays.asList(73,67,38,33);
+        System.out.println("grades   = " + Arrays.asList(test));
+        System.out.println("expected = [[75, 67, 40, 33]]");
 
+        List<Integer> roundedGrades = gradingStudents(test);
+        System.out.println("rounded  = " + Arrays.asList(roundedGrades));
     }
 
 }
