@@ -26,9 +26,8 @@ public class timeConversion {
         hours = 0;
       }
     } else {
-      if(hours != 12) {
+      if(hours != 12)
         hours += 12;
-      }
     }
     final int minutes = Integer.parseInt(splitted[1]);
     final int seconds = Integer.parseInt(splitted[2].substring(0, 2));
