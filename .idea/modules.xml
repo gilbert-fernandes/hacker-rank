@@ -12,6 +12,7 @@
       <module fileurl="file://$PROJECT_DIR$/008-birthday-cake-candles/008-birthday-cake-candles.iml" filepath="$PROJECT_DIR$/008-birthday-cake-candles/008-birthday-cake-candles.iml" />
       <module fileurl="file://$PROJECT_DIR$/009-time-conversion/009-time-conversion.iml" filepath="$PROJECT_DIR$/009-time-conversion/009-time-conversion.iml" />
       <module fileurl="file://$PROJECT_DIR$/010-grading-students/010-grading-students.iml" filepath="$PROJECT_DIR$/010-grading-students/010-grading-students.iml" />
+      <module fileurl="file://$PROJECT_DIR$/011-maximizing-mission-points/011-maximizing-mission-points.iml" filepath="$PROJECT_DIR$/011-maximizing-mission-points/011-maximizing-mission-points.iml" />
     </modules>
   </component>
 </project>
