@@ -14,6 +14,7 @@
       <module fileurl="file://$PROJECT_DIR$/010-grading-students/010-grading-students.iml" filepath="$PROJECT_DIR$/010-grading-students/010-grading-students.iml" />
       <module fileurl="file://$PROJECT_DIR$/011-maximizing-mission-points/011-maximizing-mission-points.iml" filepath="$PROJECT_DIR$/011-maximizing-mission-points/011-maximizing-mission-points.iml" />
       <module fileurl="file://$PROJECT_DIR$/012-apple-and-orange/012-apple-and-orange.iml" filepath="$PROJECT_DIR$/012-apple-and-orange/012-apple-and-orange.iml" />
+      <module fileurl="file://$PROJECT_DIR$/013-kangaroo/013-kangaroo.iml" filepath="$PROJECT_DIR$/013-kangaroo/013-kangaroo.iml" />
     </modules>
   </component>
 </project>
