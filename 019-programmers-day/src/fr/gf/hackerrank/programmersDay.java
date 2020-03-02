@@ -12,7 +12,7 @@ package fr.gf.hackerrank;
  *
  * In both calendar systems, February is the only month with a variable amount of days;
  * it has 29 days during a leap year, and 28 days during all other years.
- * In the Julian calendar, leap years are divisible by 4\
+ * In the Julian calendar, leap years are divisible by 4
  * In the Gregorian calendar, leap years are either of the following:
  * - divisible by 400
  * - divisible by 4 but not by 100
@@ -24,7 +24,29 @@ package fr.gf.hackerrank;
 public class programmersDay {
 
   static String dayOfProgrammer(int year) {
-    return "";
+    // if transition year, we can directly answer
+    if(year == 1918) {
+      return "26.09.1918";
+    }
+
+    // number of days in 7 monthes
+    final int sevenMonthes = 215;
+
+    // find out how many days feb has
+    int feb = 0;
+
+    if(year < 1918) {
+      // julian -> years are divisible by 4
+      feb = (year % 4) == 0 ? 29 : 28;
+    }
+    else if(year > 1918) {
+      // gregorian -> divisible by 400
+      //              or divisible by 4 but not by 100
+      feb = (year % 400 == 0) || ((year % 4 == 0) && !(year % 100 == 0)) ? 29 : 28;
+    }
+
+    feb = 256 - (feb + sevenMonthes);
+    return feb + ".09." + year;
   }
 
   public static void main(String[] args) {
