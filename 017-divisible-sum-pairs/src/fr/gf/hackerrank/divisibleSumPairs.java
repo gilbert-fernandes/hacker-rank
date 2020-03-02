@@ -25,28 +25,31 @@ public class divisibleSumPairs {
    * n = length of the submitted array
    */
   static int divisibleSumPairs(int n, int k, int[] ar) {
-    int[] reminderList = new int[k];
-    // calculate and store reminders of each array value % k
-    for(int i=0; i < ar.length; i++) {
-      final int r = ar[i] % k;
-      reminderList[r]++;
+    // HashMap to store complements
+    Map<Integer, Integer> buckets = new HashMap<>();
+    int pairs = 0;
+
+    for (int i = 0; i < n; i++) {
+      // grab number from array, calculate % k
+      int num = ar[i];
+      num %= k;
+      // complement
+      int complement = (k - num) % k;
+      // check size of bucket, not empty -> increment amount of pairs
+      Integer count = buckets.get(complement);
+      if (count != null) {
+        pairs += count;
+      }
+      // try to get num from bucket. not there -> add it
+      // already there -> increment count
+      count = buckets.get(num);
+      if (count == null) {
+        buckets.put(num, 1);
+      } else {
+        buckets.put(num, count + 1);
+      }
     }
-    // all items that produced 0 under % k can only be paired among themselves
-    final int count = reminderList[0];
-    // calculate pair count
-    int pairCount = (count * (count-1)) /2;
-    // iterate through half the remaining reminders
-    for(int i=1; i < k/2 && i != k-i; i++) {
-      pairCount += reminderList[i] * reminderList[k-i];
-    }
-    // the loop above, if there is an even amount of reminders, skips
-    // the middle one. so we check for evenness and act accordingly :
-    if(k % 2== 0) {
-      int half = reminderList[k/2];
-      pairCount += (half * (half-1)) / 2;
-    }
-    // return number of pairs
-    return pairCount;
+    return pairs;
   }
 
   public static void main(String[] args) {
