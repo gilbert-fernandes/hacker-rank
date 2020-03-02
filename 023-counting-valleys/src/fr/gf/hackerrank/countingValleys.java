@@ -28,6 +28,32 @@ package fr.gf.hackerrank;
 public class countingValleys {
 
   static int countingValleys(int n, String s) {
+    // sea level is 0
+    // we track going down as -1
+    // going up as +1
+    // and record how many times we cross the 0 line
+    int valleys = 0;
+    int level = 0;
+    for(int i=0; i<n; i++) {
+      char c = s.charAt(i);
+      if(c == 'D') {
+        // going down
+        level--;
+//        System.out.println("going down, level = " + level);
+      } else if(c == 'U') {
+        // going up
+        level++;
+//        System.out.println("going up, level = " + level);
+        // if level reaches 0 we are back at sea level
+        if(level == 0) {
+          valleys++;
+//          System.out.println("sea level, number of valleys = " + valleys);
+        }
+      }
+//      System.out.println(c);
+    }
+//    System.out.println();
+    return valleys;
   }
 
   public static void main(String[] args) {
@@ -47,6 +73,7 @@ public class countingValleys {
      * we start from sea level, and go back to it -> we entered and left ONE valley
      *
      */
+    System.out.println(countingValleys(8, "UDDDUDUU"));
   }
 
 }
