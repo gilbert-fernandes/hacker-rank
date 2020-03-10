@@ -20,29 +20,6 @@ public class pickingNumbers {
    * @return numbers of items obeying Abs(Difference) == 0 || 1
    */
   public static int pickingNumbers(final List<Integer> list) {
-    // v1 - not working
-//    // convert list to array and sort
-//    Integer[] listAsArray = list.stream().toArray(Integer[]::new);
-//    Arrays.sort(listAsArray);
-//
-//    int count = 0,
-//        max   = 0;
-//
-//    for(int i=0; i<listAsArray.length; i++){
-//      for(int j=i; j<listAsArray.length; j++){
-//        if(listAsArray[j] - listAsArray[i] <= 1){
-//          count++;
-//        }
-//      }
-//      if(count > max) {
-//        max = count;
-//        count = 0;
-//      }
-//    }
-//
-//    return max;
-
-    // v2 - seems to work
     int outerCount = 0;
     int temp = 0;
 
