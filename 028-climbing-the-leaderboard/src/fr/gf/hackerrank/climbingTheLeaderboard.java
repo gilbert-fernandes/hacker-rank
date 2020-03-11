@@ -20,6 +20,7 @@ public class climbingTheLeaderboard {
 
   static int[] climbingLeaderboard(int[] scores, int[] alice) {
     // TODO
+    return new int[1];
   }
 
   public static void main(String[] args) {
@@ -30,6 +31,7 @@ public class climbingTheLeaderboard {
      * sample input 2
      * 6 5 4 2 1
      */
+
   }
 
 }
