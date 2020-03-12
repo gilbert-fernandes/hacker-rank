@@ -46,7 +46,7 @@ public class designerPDFviewer {
      * lowercase English letter, ascii[a-z].
      * The second line contains a single word, consisting of lowercase English alphabetic letters.
      *
-     * @param args
+     * @param args args not used
      */
     public static void main(String[] args) {
         // 1 3 1 3 1 4 1 3 2 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5
